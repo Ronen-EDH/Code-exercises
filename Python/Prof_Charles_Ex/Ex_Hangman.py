@@ -52,7 +52,7 @@ while gletters > 0:
         gletters -= 1
 
     if '_' not in hiddenw:
-        print('Well done you bloody bastard :)')
+        print('Well done, you won :)')
         quit()
 
     os.system("cls")
