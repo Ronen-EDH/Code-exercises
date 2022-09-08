@@ -1,0 +1,34 @@
+body {
+  background-color: #ffd58c;
+}
+
+table,
+td {
+  border: 2px;
+  border-style: solid;
+}
+
+.table1 tr:first-child {
+  text-align: center;
+}
+
+.table1 {
+  margin-bottom: 5%;
+  width: 750px;
+}
+
+.table2 {
+  max-width: 1000px;
+  background-color: #a7ffdf;
+}
+.table2 td {
+  padding: 10px;
+  text-align: center;
+  width: 50px;
+}
+
+caption {
+  caption-side: bottom;
+  text-align: left;
+  border: 0;
+}

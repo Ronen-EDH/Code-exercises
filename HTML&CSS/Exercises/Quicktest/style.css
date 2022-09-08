@@ -1,0 +1,114 @@
+span {
+  color: #0E397F;
+  font-size: 18px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.load {
+  width: 30vh;
+  height: 22.5vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.load__bar {
+  background-color: #15DEA5;
+  height: 100%;
+  width: 3vh;
+  -webkit-animation: bars 1000ms backwards infinite ease-in-out alternate;
+          animation: bars 1000ms backwards infinite ease-in-out alternate;
+}
+.load__bar--1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.load__bar--1-inv {
+  -webkit-animation-delay: 515ms;
+          animation-delay: 515ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--1-inv:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.load__bar--2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.load__bar--2-inv {
+  -webkit-animation-delay: 1045ms;
+          animation-delay: 1045ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--2-inv:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.load__bar--3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.load__bar--3-inv {
+  -webkit-animation-delay: 1410ms;
+          animation-delay: 1410ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--3-inv:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.load__bar--4 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+.load__bar--4-inv {
+  -webkit-animation-delay: 1010ms;
+          animation-delay: 1010ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--4-inv:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.load__bar--5 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+.load__bar--5-inv {
+  -webkit-animation-delay: 1885ms;
+          animation-delay: 1885ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--5-inv:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}/*# sourceMappingURL=style.css.map */

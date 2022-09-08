@@ -1,0 +1,115 @@
+$cd-btn: #15DEA5;
+$cd-txt: white;
+$color-box:#15DEA5 ;
+
+$prog-bar-dur: 1000ms;
+$prog-bar-delay: 150ms;
+
+* {
+    box-sizing: border-box;
+  }
+
+p {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center ;
+    position: relative;
+}
+
+// .btn {
+//     height: 8vh;
+//     order: 1;
+//     border-style: none;
+//     background: #15DEA5;
+//     color: white;
+//     font-size: 1.5rem;
+//     cursor: pointer;
+//     padding: 1rem 2rem;
+//     &:active {
+//         & + .progress {
+//             & > .progress__bar {
+//                 transform: scaleX(1);
+//             }
+//         }
+//     }
+// }
+@keyframes progress-bar{
+    0% {
+        transform: scaleX(0);
+        opacity: .1;
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+        animation-timing-function: cubic-bezier(.9,0,.1,1);
+    }
+    46% {
+        transform: scaleX(.81);
+        animation-timing-function: cubic-bezier(.25,0.25,1);
+    }
+    85%,100% {
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes cat {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.progress {
+    border: 2px solid black ;
+    width: 50vw;
+    height: 30px;
+    align-self: center;
+    // transition: transform 330ms ease-in-out;
+    &__bar {    
+        background: $color-box;
+        border: 2px solid white;
+        width: 100%;
+        height: 100%;
+        transform-origin: left;
+        transform: scaleX(0.5);
+        animation: progress-bar $prog-bar-dur $prog-bar-delay both;
+    }
+}
+
+$cat-delay: $prog-bar-dur + $prog-bar-delay*2;
+
+.cat {
+    width: 50vw;
+    height: 30vw;
+    position: absolute;
+    overflow: hidden;    
+    background-image: url("https://bit.ly/2XJJLKn");
+    background-size: cover;
+    background-position: -20%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .1rem;
+    font-size: 4vw;
+    font-weight: 900;
+    color: gray;
+    top:25vh;
+    animation: cat 0ms $cat-delay both;
+}
+
+

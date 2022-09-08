@@ -1,0 +1,9 @@
+$color-heading: (orange-color:#cc8624, pink-color:#cc2475, blue-color:#2469cc, green-color:#24cc24);
+
+@each $color-name,$color-value in $color-heading {
+.article {
+    &__heading--#{$color-name} {
+        color: map-get($color-heading, $color-name)
+    }
+   }   
+}
